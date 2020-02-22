@@ -1,0 +1,32 @@
+{
+  "name": "@aestheticbookshelf/oauth",
+  "version": "1.0.1",
+  "description": "Oauth.",
+  "main": "lib/oauth.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "oauth"
+  ],
+  "author": "aestheticbookshelf",
+  "license": "MIT",
+  "homepage": "https://github.com/aestheticbookshelf/oauth",
+  "bugs": {
+    "url": "https://github.com/aestheticbookshelf/oauth/issues",
+    "email": "aestheticbookshelf@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aestheticbookshelf/oauth.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.4",
+    "express-session": "^1.17.0",
+    "firestore-store": "^2.0.1",
+    "passport": "^0.4.1",
+    "passport-lichess": "^1.1.0"
+  }
+}
