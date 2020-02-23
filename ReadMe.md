@@ -45,4 +45,4 @@ If your `authUrl` passed to the `oauth` module was `/auth/lichess` and your serv
 
 ### Host
 
-You have to specify your server host in `env` variable `SITE_HOST`. If this is not defined, then a development server is assumed with host `localhost:3000`; for the development server you need to register a separate `oauth` app, where you have `http://localhost:3000/auth/lichess` for homepage url and `http://localhost:3000/auth/lichess/callback` for callback url ( or alternatively you can define `SITE_HOST` in development too, eg. `SITE_HOST=localhost:8080` ).
+You have to specify your server's host in `env` variable `SITE_HOST`. If this is not defined, then a development server is assumed with host `localhost:3000`. For the development server you need to register a separate `oauth` app, where you have `http://localhost:3000/auth/lichess` for homepage `url` and `http://localhost:3000/auth/lichess/callback` for callback `url` ( or alternatively you can define `SITE_HOST` in development too, eg. `SITE_HOST=localhost:8080` ).
