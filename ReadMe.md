@@ -33,11 +33,15 @@ oauth.addLichessStrategy(app, {
 
 ### User
 
-After you execute the above code in your `express` server, all your `express` requests will have a lichess user that you can access with `req.user` ( or null if not authorized ). The `access token` is available as `req.user.accessToken`.
+If you execute the above code in your `express` server, then after visiting the `authURL` on your server ( which takes you to the oauth server of the third party ) and approving the `oauth` form, all your `express` requests will have a lichess user that you can access with `req.user` ( or null if not authorized ). The `access token` is available as `req.user.accessToken`.
+
+### Scope
+
+You can pass an optional `scope` string, which should hold a space separated list of the scopes you request.
 
 ### Registering app
 
-Of course first you have to register your `oauth` app with lichess ( see also [register lichess oauth app](https://lichess.org/account/oauth/app) ) and have the necessary environment variables set with `CLIENT_ID` and `CLIENT_SECRET`.
+Of course first you have to register your `oauth` app with the `oauth` provider ( see also [register lichess oauth app](https://lichess.org/account/oauth/app) ) and have the necessary environment variables set with `CLIENT_ID` and `CLIENT_SECRET`.
 
 ### Urls
 
